@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Envión Taller</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #59D458;
+            color: black;
+            font-family: "Helvetica", sans-serif;
+            letter-spacing: -2%;
+            background-image: url("images/background.gif");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center; font-size: 48px; line-height: 56px;
+        }
+
+        .hero-container {
+            padding: 48px 128px;
+            display: flex;
+            gap: 96px;
+            flex-direction: column;
+            align-items: center;
+        }
+        :root {
+            --highlight: #59D458;
+            --main-color: #59D458;
+            --main-muted: #ff2e7410;
+        }
+
+        .socials {
+            display: flex;
+            gap: 24px;
+        }
+
+        .socials-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        a {
+            color: black;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .hero-container {
+                padding: 24px 24px;
+                display: flex;
+                gap: 24px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                text-align: center; font-size: 24px; line-height: 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <img style="height: 32px;" src="images/logo-black.png">
+            <h1>Hola. Quiere usted unos lindos cuadernitos hechos artesanalmente, con tapas duras, papeles de colores, binding cosido a mano, para regalar o regalarse, tener en los escritorios de su empresa, obsequiar a fin de año y a fines? Pues póngase en contacto conmigo, no pierda el tiempo.<br>Saludos :)</h1>
+            <div class="socials-container">
+                <p>Seguime, escribime, pase y vea:</p>
+                <div class="socials">
+                    <a href="https://www.instagram.com/f.matiaude/" target="_blank">Instagram</a>
+                    <a href="mailto:enviontaller@gmail.com" target="_blank">enviontaller@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
