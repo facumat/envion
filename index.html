@@ -10,33 +10,63 @@
         }
 
         body {
+            font-family: "Helvetica", sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .hero {
             background-color: #9ECAD9;
             color: black;
-            font-family: "Helvetica", sans-serif;
             background-image: url("images/background.gif");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            padding: 0px;
-            margin: 0px;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 400 ;
+            line-height: 30px;
+            letter-spacing: -0.75px;
+        }
+        
+        .about {
+            background-color: #062804;
+            color: white;
         }
 
         h1 {
             font-size: 48px; 
             line-height: 56px;
             letter-spacing: -4%;
-
         }
 
-        .headline {
+        .textwrap {
             text-align: center;
             max-width: 900px;
         }
+
+        .divider {
+            background-color: #062804;
+            margin: 0;
+        }
+
+        .divider-text {
+            font-family: monospace;
+            font-size: 16px;
+            line-height: 6px;
+            color: #9ECAD9;            
+            margin: 0;
+        white-space: nowrap;        
+    }   
+
 
         .eyebrow {
             font-family: monospace;
             font-size: 12px;
             text-transform: uppercase;
+            margin: 0px;
         }
 
         .hero-container {
@@ -48,16 +78,48 @@
             box-sizing: border-box;
             justify-content: space-between;
         }
-        :root {
-            --highlight: #59D458;
-            --main-color: #59D458;
-            --main-muted: #ff2e7410;
+
+        .about-container {
+            padding: 128px 128px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            justify-content: space-between;  
+        }
+
+        .bio {
+            background-color: #E44646;
+            color: white;
+        }
+
+
+        .bio-container {
+            padding: 56px;
+            display: flex;
+            gap: 56px;
+            flex-direction: row;
+        }
+
+        .left-c, .right-c {
+            width: 50%;
+        }
+
+        .right-c img {
+            width: 100%;
         }
 
         .socials {
             display: flex;
             gap: 24px;
         }
+
+        .trans {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
 
         .socials-container {
             display: flex;
@@ -91,18 +153,54 @@
     <section class="hero" id="hero">
         <div class="hero-container">
             <img style="height: 48px;" src="images/logo-black.png">
-            <div class="headline">
+            <div class="textwrap">
                 <p class="eyebrow">Diez años de oficio, una nueva etapa.</p>
                 <h1>Taller envión se especializa en encuadernación artesanal y serigrafía para producción a pequeña y mediana escala.</h1>
             </div>
             <div class="socials-container">
                 <div class="socials">
-                    <a href="https://www.instagram.com/papercutuy/" target="_blank">Instagram</a>
+                    <a href="https://www.instagram.com/f.matiaude/" target="_blank">Instagram</a>
                     <a href="mailto:enviontaller@gmail.com" target="_blank">enviontaller@gmail.com</a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="divider">
+        <div class="divider-container">
+            <p class="divider-text">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="textwrap">
+                <p class="eyebrow">sobre nosotros</p>
+                <p>Envión es un taller que nace en 2026 pero tiene un largo recorrido. En 2016 comenzamos a hacer encuadernaciones bajo el nombre Paper Cut. En ese momento el proyecto se centraba en la reutilización de telas de segunda mano para generar encuadernaciones personalizadas.</p>
+                <p>En paralelo, realizamos varios trabajos de encuadernación para empresas y eventos. Hoy comienza esta nueva etapa donde el foco está puesto en esa rama del negocio. </p>            
+            </div>
+        </div>
+    </section>
+    <section class="divider">
+        <div class="divider-container">
+            <p class="divider-text">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+        </div>
+    </section>
+    <section class="bio">
+        <div class="bio-container">
+            <div class="left-c">
+                <p class="eyebrow">
+                    detrás de envión
+                </p>
+                <p style="max-height: 100%;">
+                    Lucky León Piñeyro es diseñador textil y encuadernador artesanal, fundador de Taller Envión, proyecto dedicado a la encuadernación y producción editorial artesanal en Montevideo. Su trabajo combina oficio, exploración material y producción a medida para proyectos artísticos, editoriales y comerciales.<br> Cuenta con formación como tallerista de expresión plástica y una amplia experiencia docente en costura y encuadernación en diversos contextos; escuelas, centros culturales, espacios comunitarios y ámbitos de privación de libertad.<br> Impulsa el colectivo educativo Eskuelita Trans*, un espacio de encuentro, enseñanza y aprendizaje destinado a personas trans, travestis y no binarias, orientado a contrarrestar los mecanismos de exclusión presentes en los ámbitos educativos y culturales.<br>Forma parte de Multimostrx Colectivo, con quienes sostiene desde 2019 el espacio cultural Casa de Piedra, en Ciudad Vieja: un espacio recuperado donde funciona un pequeño taller textil dedicado a la producción de piezas comerciales y experimentales.
+                </p>
+                <div class="trans"><img src="images/trans.png" style="width: 24px; height: 24px;"><p class="eyebrow">negocio trans*</p></div>
+            </div>
+            <div class="right-c">
+                <img src="images/avatar.jpg" >
+            </div>
+        </div>
+    </section>
+</body>
 
 </body>
 </html>
