@@ -24,10 +24,16 @@
             background-repeat: no-repeat;
         }
 
+        br {
+            display: block;
+            content: "";
+            margin-top: 16px;
+        }
+
         p {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 400 ;
-            line-height: 30px;
+            line-height: 28px;
             letter-spacing: -0.75px;
         }
         
@@ -47,16 +53,28 @@
             max-width: 900px;
         }
 
-        .divider {
+        .divider-green {
             background-color: #062804;
             margin: 0;
+            color: #9ECAD9;            
+
+        }
+
+        .divider-red {
+            background-color: #E44646;
+            margin: 0;
+            color:#062804;    
+        }
+
+        .divider-black {
+            background-color: black;
+            color: #E44646;
         }
 
         .divider-text {
             font-family: monospace;
             font-size: 16px;
             line-height: 6px;
-            color: #9ECAD9;            
             margin: 0;
         white-space: nowrap;        
     }   
@@ -90,7 +108,26 @@
 
         .bio {
             background-color: #E44646;
-            color: white;
+            color: #ffffff;
+        }
+
+
+        .footer {
+            background-color: black;
+            color: #D8DFCF;
+        }
+
+        .footer a {
+            color: #9ECAD9;
+        }
+
+        .footer-container {
+            padding: 56px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
         }
 
 
@@ -103,6 +140,10 @@
 
         .left-c, .right-c {
             width: 50%;
+        }
+
+        .left-c {
+            align-items: stretch;
         }
 
         .right-c img {
@@ -142,6 +183,35 @@
                 justify-content: space-between;
             }
 
+            .bio-container{
+                padding: 32px;
+                flex-direction: column;
+                gap: 32px;
+                text-align: center;
+            }
+
+            .trans {
+                justify-content: center;
+            }
+
+            .about-container {
+                padding: 32px 32px;
+            }
+
+        .footer-container {
+            padding: 32px;
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+            .left-c, .right-c {
+                width: 100%;
+            }
+
             h1 {
                 text-align: center; font-size: 24px; line-height: 28px; letter-spacing: -2.5%;
             }
@@ -159,45 +229,64 @@
             </div>
             <div class="socials-container">
                 <div class="socials">
-                    <a href="https://www.instagram.com/papercutuy/" target="_blank">Instagram</a>
+                    <a href="https://www.instagram.com/f.matiaude/" target="_blank">Instagram</a>
                     <a href="mailto:enviontaller@gmail.com" target="_blank">enviontaller@gmail.com</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="divider">
-        <div class="divider-container">
+    <section>
+        <div class="divider-green">
             <p class="divider-text">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
         </div>
     </section>
     <section class="about" id="about">
         <div class="about-container">
             <div class="textwrap">
-                <p class="eyebrow">sobre nosotros</p>
+                <p class="eyebrow">sobre nosotres</p>
                 <p>Envión es un taller que nace en 2026 pero tiene un largo recorrido. En 2016 comenzamos a hacer encuadernaciones bajo el nombre Paper Cut. En ese momento el proyecto se centraba en la reutilización de telas de segunda mano para generar encuadernaciones personalizadas.</p>
                 <p>En paralelo, realizamos varios trabajos de encuadernación para empresas y eventos. Hoy comienza esta nueva etapa donde el foco está puesto en esa rama del negocio. </p>            
             </div>
         </div>
     </section>
-    <section class="divider">
-        <div class="divider-container">
-            <p class="divider-text">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</p>
+    <section >
+        <div class="divider-red">
+            <p class="divider-text">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
         </div>
     </section>
     <section class="bio">
         <div class="bio-container">
             <div class="left-c">
+                <div>
                 <p class="eyebrow">
                     detrás de envión
                 </p>
-                <p style="max-height: 100%;">
-                    Lucky León Piñeyro es diseñador textil y encuadernador artesanal, fundador de Taller Envión, proyecto dedicado a la encuadernación y producción editorial artesanal en Montevideo. Su trabajo combina oficio, exploración material y producción a medida para proyectos artísticos, editoriales y comerciales.<br> Cuenta con formación como tallerista de expresión plástica y una amplia experiencia docente en costura y encuadernación en diversos contextos; escuelas, centros culturales, espacios comunitarios y ámbitos de privación de libertad.<br> Impulsa el colectivo educativo Eskuelita Trans*, un espacio de encuentro, enseñanza y aprendizaje destinado a personas trans, travestis y no binarias, orientado a contrarrestar los mecanismos de exclusión presentes en los ámbitos educativos y culturales.<br>Forma parte de Multimostrx Colectivo, con quienes sostiene desde 2019 el espacio cultural Casa de Piedra, en Ciudad Vieja: un espacio recuperado donde funciona un pequeño taller textil dedicado a la producción de piezas comerciales y experimentales.
+                <p>
+                    Lucky León Piñeyro es diseñador textil y encuadernador artesanal, fundador de Taller Envión, proyecto dedicado a la encuadernación y producción editorial artesanal en Montevideo. Su trabajo combina oficio, exploración material y producción a medida para proyectos artísticos, editoriales y comerciales.</p><p>  Cuenta con formación como tallerista de expresión plástica y una amplia experiencia docente en costura y encuadernación en diversos contextos; escuelas, centros culturales, espacios comunitarios y ámbitos de privación de libertad.</p><p> Impulsa el colectivo educativo Eskuelita Trans*, un espacio de encuentro, enseñanza y aprendizaje destinado a personas trans, travestis y no binarias, orientado a contrarrestar los mecanismos de exclusión presentes en los ámbitos educativos y culturales.</p><p> Forma parte de Multimostrx Colectivo, con quienes sostiene desde 2019 el espacio cultural Casa de Piedra, en Ciudad Vieja: un espacio recuperado donde funciona un pequeño taller textil dedicado a la producción de piezas comerciales y experimentales.
                 </p>
+                </div>
+
                 <div class="trans"><img src="images/trans.png" style="width: 24px; height: 24px;"><p class="eyebrow">negocio trans*</p></div>
             </div>
             <div class="right-c">
-                <img src="images/avatar.jpg" >
+                <img src="images/avatar.jpg" style="border-radius: 24px;" >
             </div>
+        </div>
+    </section>
+    <section >
+        <div class="divider-black">
+            <p class="divider-text">####################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################</p>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-container">
+            <div class="socials">
+                <p>
+                    Seguinos en <a href="https://www.instagram.com/f.matiaude/" target="_blank">Instagram</a> o pedinos tu presupuesto en <a href="mailto:enviontaller@gmail.com" target="_blank">enviontaller@gmail.com</a>
+                </p>
+                <p>Montevideo, Uruguay.</p>
+            </div>
+            <img src="images/envion.png" style="width: 100%;">
         </div>
     </section>
 </body>
